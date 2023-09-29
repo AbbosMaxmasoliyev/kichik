@@ -1,0 +1,206 @@
+.container {
+  width: 1500px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container .left {
+  width: 300px;
+  height: 700px;
+  border-radius: 50px 0px 0px 50px;
+  background: linear-gradient(157deg, #35E9BE 0%, #4B3CA5 75.82%);
+}
+.container .left .page {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .left .page .blok {
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container .left .page .blok img {
+  width: 38px;
+  height: 38px;
+}
+.container .left .page .blok h4 {
+  font-size: 27px;
+  margin-left: 20px;
+  color: white;
+}
+.container .left .page .blok h2 {
+  color: white;
+  margin-left: 40px;
+}
+.container .right {
+  width: 1100px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .right .info_first {
+  width: 900px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .right .info_first .info_left {
+  width: 178px;
+  height: 59px;
+}
+.container .right .info_first .info_left p {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+.container .right .info_first .info_left p span {
+  color: #000;
+  font-size: 17px;
+  font-weight: 300;
+}
+.container .right .info_second {
+  width: 900px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .right .info_second .s_left {
+  width: 350px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .right .info {
+  width: 900px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .right .info .btn {
+  width: 100px;
+  height: 45px;
+}
+.container .right .info .btn button {
+  width: 40px;
+  height: 40px;
+}
+.container .right .info .btn .img {
+  width: 39px;
+  height: 39px;
+  margin-top: 3px;
+}
+
+table,
+tr,
+th,
+td {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+tr {
+  border: none;
+  border-bottom: 1px solid red;
+  border-left: none;
+  border-right: none;
+}
+
+.productTable {
+  border-radius: 15px;
+  width: 1024px;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.productTable th,
+.productTable tr,
+.productTable td {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+.productTable td {
+  padding: 5px;
+}
+.productTable tr:nth-child(even) {
+  background-color: rgba(117, 117, 117, 0.6941176471);
+}
+.productTable .s_right {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.productTable .s_right input {
+  width: 50px;
+  height: 30px;
+}
+.productTable .btn {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.check::before {
+  content: url("../img/checked.svg");
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notChecked::before {
+  content: url("../img/close.svg");
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.set {
+  position: absolute;
+  top: 0;
+  padding: 0 10px;
+  background-color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.set button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.set .check {
+  background-color: #058c42;
+}
+.set .notChecked {
+  background-color: #ff5714;
+}
+
+.setActive {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

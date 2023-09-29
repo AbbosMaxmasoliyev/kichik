@@ -1,0 +1,245 @@
+.container {
+    width: 1500px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        width: 300px;
+        height: 700px;
+        border-radius: 50px 0px 0px 50px;
+        background: linear-gradient(157deg, #35E9BE 0%, #4B3CA5 75.82%);
+
+        .page {
+            width: 300px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .blok {
+                width: 240px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    width: 38px;
+                    height: 38px;
+                }
+
+                h4 {
+                    font-size: 27px;
+                    margin-left: 20px;
+                    color: white;
+                }
+
+                h2 {
+                    color: white;
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 1100px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .info_first {
+            width: 900px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .info_left {
+                width: 178px;
+                height: 59px;
+
+                p {
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 20px;
+
+                    span {
+                        color: #000;
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+        }
+
+        .info_second {
+            width: 900px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            .s_left {
+                width: 350px;
+                height: 40px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+
+        }
+
+        .info {
+            width: 900px;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .btn {
+                width: 100px;
+                height: 45px;
+
+                button {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .img {
+                    width: 39px;
+                    height: 39px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+table,
+tr,
+th,
+td {
+
+
+    box-sizing: border-box;
+    border-collapse: collapse;
+
+}
+
+tr {
+    border: none;
+    border-bottom: 1px solid red;
+    border-left: none;
+    border-right: none;
+}
+
+.productTable {
+    border-radius: 15px;
+    width: 1024px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+
+    th,
+    tr,
+    td {
+        box-sizing: border-box;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    tr {
+        &:nth-child(even) {
+            background-color: #757575b1;
+        }
+    }
+
+    .s_right {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+
+        input {
+            width: 50px;
+            height: 30px;
+        }
+
+    }
+
+    .btn {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+.check::before {
+    content: url("../img/checked.svg");
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.notChecked::before {
+
+    content: url("../img/close.svg");
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.set {
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    background-color: #fff;
+    width: max-content;
+    height: 100%;
+    display: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .check {
+        background-color: #058c42;
+    }
+
+    .notChecked {
+        background-color: #ff5714;
+    }
+}
+
+.setActive {
+    display: flex;
+}
